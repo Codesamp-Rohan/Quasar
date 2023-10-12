@@ -404,7 +404,22 @@ nav {
   font-family: long;
   font-size: 8vw;
   transition: 0.3s;
+  mix-blend-mode: difference;
 }
 .page5 .elem:hover h1 {
   transform: translateY(-100%);
+}
+.ready-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  scale: 0;
+  transition: all 0.2s ease;
+}
+.footer {
+  background-color: black;
+  height: 100vh;
 }

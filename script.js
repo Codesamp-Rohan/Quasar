@@ -124,6 +124,33 @@ function ludoMove() {
     page.style.transform = `translateY(${newY}px)`;
   });
 }
+function wordHover() {
+  const h1 = document.querySelector(".elem:nth-child(1)");
+  const h2 = document.querySelector(".elem:nth-child(2)");
+  const h3 = document.querySelector(".elem:nth-child(3)");
+  const img1 = document.getElementById("ready-img-1");
+  const img2 = document.getElementById("ready-img-2");
+  const img3 = document.getElementById("ready-img-3");
+
+  h1.addEventListener("mouseenter", function () {
+    img1.style.scale = "1";
+  });
+  h1.addEventListener("mouseleave", function () {
+    img1.style.scale = "0";
+  });
+  h2.addEventListener("mouseenter", function () {
+    img2.style.scale = "1";
+  });
+  h2.addEventListener("mouseleave", function () {
+    img2.style.scale = "0";
+  });
+  h3.addEventListener("mouseenter", function () {
+    img3.style.scale = "1";
+  });
+  h3.addEventListener("mouseleave", function () {
+    img3.style.scale = "0";
+  });
+}
 cursorHover();
 h1Hover();
 ankerHover();
@@ -133,3 +160,4 @@ line();
 lineSpread();
 noHover();
 ludoMove();
+wordHover();
